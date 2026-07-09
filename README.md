@@ -105,18 +105,45 @@ npm run dev
 
 ## 📸 Screenshots
 
-Add screenshots of your application here.
+### 🏠 Login Page
 
-Example:
+![Login Page](./screenshots/Login.png)
 
-```
-screenshots/
-├── home.png
-├── products.png
-├── product-details.png
-├── cart.png
-└── checkout.png
-```
+---
+
+### 🏠 Sign Up Page
+
+![Sign Up Page](./screenshots/SignUp.png)
+
+---
+
+### 🏠 Home Page
+
+![Home Page](./screenshots/Home.png)
+
+---
+
+### 🏠 Product Page
+
+![Product Page](./screenshots/Products.png)
+
+---
+
+### 🏠 Filter Page
+
+![Filter Page](./screenshots/Filter.png)
+
+---
+
+### 🏠 Cart Page
+
+![Cart Page](./screenshots/Cart.png)
+
+---
+
+### 🏠 Payment Page
+
+![Payment Page](./screenshots/Payments.png)
 
 ---
 
