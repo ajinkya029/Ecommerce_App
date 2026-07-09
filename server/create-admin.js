@@ -29,7 +29,7 @@ async function createAdminUser() {
 
     await adminUser.save();
     console.log("✅ Admin user created successfully!");
-    console.log("📧 Email: admin@example.com");
+    console.log("📧 Email: admin1@example.com");
     console.log("🔒 Password: admin123");
     console.log("🎯 Role: admin");
 
