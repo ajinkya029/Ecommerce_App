@@ -4,18 +4,22 @@ A modern and responsive **Ecommerce Web Application** that provides a seamless o
 
 ## 🚀 Tech Stack
 
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
-[![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com)
-[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
+<p align="center">
+
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-4.x-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redux Toolkit](https://img.shields.io/badge/Redux-Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-Image_Storage-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
+![PayPal](https://img.shields.io/badge/PayPal-Payment-00457C?style=for-the-badge&logo=paypal&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-HTTP_Client-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+</p>
 
 ---
 
@@ -36,14 +40,33 @@ A modern and responsive **Ecommerce Web Application** that provides a seamless o
 
 ## 📂 Project Structure
 
-```
+```text
 Ecommerce_App/
 │
-├── client/              # Frontend
-├── server/              # Backend
-├── public/
-├── src/
-├── package.json
+├── screenshots/
+│   ├── Login.png
+│   ├── SignUp.png
+│   ├── Home.png
+│   ├── Products.png
+│   ├── Filter.png
+│   ├── Cart.png
+│   └── Payments.png
+│
+├── client/
+│   ├── public/
+│   ├── src/
+│   ├── vite.config.js
+│   └── package.json
+│
+├── server/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   └── package.json
+│
 └── README.md
 ```
 
@@ -55,50 +78,69 @@ Ecommerce_App/
 
 ```bash
 git clone https://github.com/ajinkya029/Ecommerce_App.git
-```
-
-### 2. Navigate to the project directory
-
-```bash
 cd Ecommerce_App
 ```
-
-### 3. Install dependencies
-
-```bash
-npm install
-```
-
-If your project has separate frontend and backend folders:
+### 2. Install Frontend Dependencies
 
 ```bash
 cd client
+
 npm install
 
+npm run dev
+```
+
+Frontend runs on:
+
+```
+http://localhost:5173
+
+```
+
+### 3. Install Backend Dependencies
+
+```bash
 cd ../server
+
 npm install
+
+npm run dev
+```
+
+Backend runs on:
+
+```
+http://localhost:5000
 ```
 
 ---
 
-## ▶️ Run the Application
+## 🔑 Environment Variables
 
-### Start Backend
+Create a `.env` file inside the **server** directory.
 
-```bash
-npm run server
+```env
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret
+
+CLIENT_URL=http://localhost:3000
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+PAYPAL_MODE=sandbox
+PAYPAL_CLIENT_ID=your_paypal_client_id
+PAYPAL_CLIENT_SECRET=your_paypal_client_secret
 ```
 
-### Start Frontend
+Create a `.env` file inside the **server** directory.
 
-```bash
-npm start
-```
-
-Or if your project uses concurrent development:
-
-```bash
-npm run dev
+```env
+VITE_API_URL=http://localhost:5000/api
 ```
 
 ---
